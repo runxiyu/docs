@@ -5,7 +5,7 @@ all: $(PAGES:=.html) index.html
 .SUFFIXES: .7 .html
 
 .7.html:
-	mandoc -K utf-8 -O man=./%N.html -T html $< > $@
+	mandoc -K utf-8 -O man=./%N.html,style=/style.css -T html $< > $@
 
 clean:
 	rm -f *.html
