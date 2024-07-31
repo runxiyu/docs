@@ -1,1 +1,1 @@
-PAGES += *
+PAGES += polrv/censorauthkosa
