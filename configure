@@ -1,6 +1,6 @@
 #!/bin/sh
 > config.mk < /dev/null
-for i in *.7
+for i in */*.7
 do
-	printf 'PAGES += %s\n' "$(basename "$i" .7)" | tee -a config.mk
+	printf 'PAGES += %s\n' "${i%%.7}" | tee -a config.mk
 done
