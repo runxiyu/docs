@@ -12,7 +12,7 @@ pages: $(PAGES:=.html)
 	mandoc -K utf-8 -O man=./%N.html,style=/style.css -T html $< > $@
 
 clean:
-	rm -f *.html
+	rm -f $(PAGES:=.html) index.html
 
 index.html: $(PAGES:=.7)
 	cat index.html.head > index.html
