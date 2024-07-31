@@ -1,6 +1,10 @@
 include config.mk
 
+.POSIX:
+
 all: $(PAGES:=.html) index.html
+
+pages: $(PAGES:=.html)
 
 .SUFFIXES: .7 .html
 
