@@ -1,6 +1,21 @@
 #!/bin/sh
 > config.mk < /dev/null
-for i in */*.7
+for i in *
 do
-	printf 'PAGES += %s\n' "${i%%.7}" | tee -a config.mk
+	if [ ! -d "$i" ]
+	then
+		continue
+	fi
+	if [ -h "$i" ]
+	then
+		continue
+	fi
+	for j in "$i"/*.7
+	do
+		if [ '*.7' = "${j##*/}" ]
+		then
+			break
+		fi
+		printf 'PAGES += %s\n' "${j%%.7}" | tee -a config.mk
+	done
 done
