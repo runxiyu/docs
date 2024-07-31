@@ -1,1 +1,2 @@
-PAGES += polrv/censorauthkosa
+PAGES += mpol/abortion
+PAGES += mpol/censorauthkosa
