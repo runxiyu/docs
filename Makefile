@@ -1,6 +1,6 @@
 include config.mk
 
-.POSIX:
+.PHONY: all pages clean
 
 all: $(PAGES:=.html) index.html
 
