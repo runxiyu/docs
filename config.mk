@@ -1,2 +1,3 @@
-PAGES += mpol/abortion
-PAGES += mpol/censorauthkosa
+PAGES += socpol/abortion
+PAGES += socpol/censorauthkosa
+PAGES += socpol/zhpronoun
