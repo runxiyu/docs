@@ -4,3 +4,4 @@ PAGES += socpol/abortion
 PAGES += socpol/censorauthkosa
 PAGES += socpol/freeswcovid
 PAGES += socpol/zhpronoun
+PAGES += tech/forge
